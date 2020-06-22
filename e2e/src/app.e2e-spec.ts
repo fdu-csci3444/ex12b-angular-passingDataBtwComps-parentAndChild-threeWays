@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('exp12b-angular-passingDataBtwComps-parentAndChild-threeWays app is running!');
+    expect(page.getTitleText()).toEqual('ex12b-angular-passingDataBtwComps-parentAndChild-threeWays app is running!');
   });
 
   afterEach(async () => {

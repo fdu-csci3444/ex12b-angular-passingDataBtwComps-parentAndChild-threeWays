@@ -1,0 +1,6 @@
+<p>child3c works! - for names; parent publishes on subject2names4c and child3c subscribes to observable of it. For selectedName reverse happens</p>
+
+<p>Names passed from parent to child3c;</p>
+<div *ngFor="let name of names" (click)="onNameClicked(name)">{{name}}</div>
+<p *ngIf="names">Click one of the names to publish it to parent</p>
+<span *ngIf="nameSelected">nameSelected: {{nameSelected}}</span><br>

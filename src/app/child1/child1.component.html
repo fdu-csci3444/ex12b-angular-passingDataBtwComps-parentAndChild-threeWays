@@ -1,0 +1,5 @@
+<p>child1 works! - uses @Input and @Output with EventEmitter. Parent passes names via @Input, Child1 passes vote via @Output and EventEmitter</p>
+
+<p>Names passed from parent to child1;</p>
+<div *ngFor="let name of names" (click)="onNameClicked(name)">{{name}}</div>
+<p *ngIf="names">Click one of the names above to pass it back to parent</p>

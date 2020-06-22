@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'exp12b-angular-passingDataBtwComps-parentAndChild-threeWays'`, () => {
+  it(`should have as title 'ex12b-angular-passingDataBtwComps-parentAndChild-threeWays'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('exp12b-angular-passingDataBtwComps-parentAndChild-threeWays');
+    expect(app.title).toEqual('ex12b-angular-passingDataBtwComps-parentAndChild-threeWays');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('exp12b-angular-passingDataBtwComps-parentAndChild-threeWays app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ex12b-angular-passingDataBtwComps-parentAndChild-threeWays app is running!');
   });
 });

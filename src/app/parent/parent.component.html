@@ -1,0 +1,63 @@
+<p>parent works!</p>
+
+<hr>
+<h1>Child1 - using @Input, @Output to pass in/out btw parent and child1</h1>
+<span *ngIf="nameFromChild1">nameFromChild1 sent to parent: {{nameFromChild1}}</span>
+<app-child1 [names]="namesList4child1" (nameEventEmitter)="onNameEEemitFromChild1($event)"></app-child1>
+
+<hr>
+<h1>Child2 - parent using @ViewChild to access a child2 attribute to set/get it</h1>
+<div>
+    <label for="namesList4child2Str">namesList4child2Str: </label>
+    <input [(ngModel)]="namesList4child2Str" placeholder="enter comma separated names"/>
+    <p>{{namesList4child2Str}}</p>
+    <button (click)="onClickButton4pass_namesList4child2Str_to_child2(namesList4child2Str)">Pass namesList4child2Str to child2</button>
+    <br>
+    <button (click)="onClickButton4get_nameSelected_from_child2()">Get nameSelected from child2</button>
+     <br>
+    <span *ngIf="nameFromChild2">nameFromChild2 fetched from child2: {{nameFromChild2}}</span> <br>
+    <span *ngIf="templateRef2inputValueFromChild2">templateRef2inputValueFromChild2 fetched from child2: {{templateRef2inputValueFromChild2}}</span>
+</div>
+<app-child2></app-child2>
+
+<hr>
+<h1>Child3a - using pub/sub via a Subject in child3.service to pass data btw parent and children(child3a,3b,3c)</h1>
+<div>
+    <label for="namesList4child3aStr">namesList4child3aStr: </label>
+    <input [(ngModel)]="namesList4child3aStr" placeholder="enter comma separated names for 3a"/>
+    <p>{{namesList4child3aStr}}</p>
+    <button (click)="publish2subject2names4a(namesList4child3aStr)">Pass namesList4child3aStr to child3a</button>
+     <br>
+    <span *ngIf="nameFromChild3a">child3a published nameFromChild3a : {{nameFromChild3a}}</span> <br>
+</div>
+<app-child3a></app-child3a>
+
+<hr>
+<h1>Child3b - using pub/sub via a Subject in child3.service to pass data btw parent and children(child3a,3b,3c)</h1>
+<div>
+    <label for="namesList4child3bStr">namesList4child3bStr: </label>
+    <input [(ngModel)]="namesList4child3bStr" placeholder="enter comma separated names for 3b"/>
+    <p>{{namesList4child3bStr}}</p>
+    <button (click)="publish2subject2names4b(namesList4child3bStr)">Publish namesList4child3bStr to child3b</button>
+     <br>
+    <span *ngIf="nameFromChild3b">child3b published nameFromChild3b : {{nameFromChild3b}}</span> <br>
+</div>
+<app-child3b></app-child3b>
+
+<hr>
+<h1>Child3c - using pub/sub via a Subject in child3.service to pass data btw parent and children(child3a,3b,3c)</h1>
+<div>
+    <label for="namesList4child3cStr">namesList4child3cStr: </label>
+    <input [(ngModel)]="namesList4child3cStr" placeholder="enter comma separated names for 3c"/>
+    <p>{{namesList4child3cStr}}</p>
+    <button (click)="publish2subject2names4c(namesList4child3cStr)">Publish namesList4child3cStr to child3c</button>
+     <br>
+    <span *ngIf="nameFromChild3c">child3c published nameFromChild3c : {{nameFromChild3c}}</span> <br>
+</div>
+<app-child3c></app-child3c>
+
+<hr>
+<h2>pub to Subjects for child3a, child3b, child3c</h2>
+<div>
+    <button (click)="publish2subject2names4a4b4c(namesList4child3aStr, namesList4child3bStr, namesList4child3cStr)">Publish namesList4child3aStr, namesList4child3bStr, namesList4child3cStr to child3a, child3b, child3c</button>
+</div>

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'exp12b-angular-passingDataBtwComps-parentAndChild-threeWays';
+  title = 'ex12b-angular-passingDataBtwComps-parentAndChild-threeWays';
 }

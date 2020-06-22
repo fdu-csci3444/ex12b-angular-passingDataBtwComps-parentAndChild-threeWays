@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "exp12b-angular-passingDataBtwComps-parentAndChild-threeWays": {
+    "ex12b-angular-passingDataBtwComps-parentAndChild-threeWays": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/exp12b-angular-passingDataBtwComps-parentAndChild-threeWays",
+            "outputPath": "dist/ex12b-angular-passingDataBtwComps-parentAndChild-threeWays",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "exp12b-angular-passingDataBtwComps-parentAndChild-threeWays:build"
+            "browserTarget": "ex12b-angular-passingDataBtwComps-parentAndChild-threeWays:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "exp12b-angular-passingDataBtwComps-parentAndChild-threeWays:build:production"
+              "browserTarget": "ex12b-angular-passingDataBtwComps-parentAndChild-threeWays:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "exp12b-angular-passingDataBtwComps-parentAndChild-threeWays:build"
+            "browserTarget": "ex12b-angular-passingDataBtwComps-parentAndChild-threeWays:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "exp12b-angular-passingDataBtwComps-parentAndChild-threeWays:serve"
+            "devServerTarget": "ex12b-angular-passingDataBtwComps-parentAndChild-threeWays:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "exp12b-angular-passingDataBtwComps-parentAndChild-threeWays:serve:production"
+              "devServerTarget": "ex12b-angular-passingDataBtwComps-parentAndChild-threeWays:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "exp12b-angular-passingDataBtwComps-parentAndChild-threeWays"
+  "defaultProject": "ex12b-angular-passingDataBtwComps-parentAndChild-threeWays"
 }

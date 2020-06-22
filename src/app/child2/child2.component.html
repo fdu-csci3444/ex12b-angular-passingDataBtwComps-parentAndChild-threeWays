@@ -1,0 +1,8 @@
+<p>child2 works! - parent uses @ViewChild to set child2 names. And parent also uses @ViewChild to get child2 selectedName</p>
+
+<p>Names passed from parent to child2;</p>
+<div *ngFor="let name of names" (click)="onNameClicked(name)">{{name}}</div>
+<p *ngIf="names">Click one of the names above for parent to be able get it</p>
+<span *ngIf="nameSelected">nameSelected: {{nameSelected}}</span><br>
+
+<input #child2templateRef2input placeholder="enter child2tempateRefValue here is accessed via ViewChild">

@@ -1,5 +1,33 @@
-# Exp12bAngularPassingDataBtwCompsParentAndChildThreeWays
+# Ex12bAngularPassingDataBtwCompsParentAndChildThreeWays
+Shows 3 ways of components(parent to child) talking to each other
+- 1st way; using @Input + @Output, event emitter (see parent, child1)
+- 2nd way; using @ViewChild, @AfterViewInit (see parent, child2)
+- 3rd way; using Subscription service, via pub/sub model (see parent, child3a, child3b, child3c, child.service)
 
+NOTE ilker with 3rd way, any component can publish to all components that have subscribed to a subscription.
+
+## creation of components and service(pub/sub) via CLI
+- generate project
+```dos
+cd C:/ws_angular
+ng new ex12b-angular-passingDataBtwComps-parentAndChild-threeWays  --routing --style=scss
+```
+- generate components(all in root module, app.module);
+```dos
+cd ex12b-angular-passingDataBtwComps-parentAndChild-threeWays
+ng g c parent
+ng g c child1
+ng g c child2
+ng g c child3a
+ng g c child3b
+ng g c child3c
+```
+- generate pub/sub service
+```dos
+ng g s services/child3
+```
+
+## project created via ng (Angular CLI)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
 ## Development server
