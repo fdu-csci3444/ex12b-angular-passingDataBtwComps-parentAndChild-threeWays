@@ -27,6 +27,22 @@ ng g c child3c
 ng g s services/child3
 ```
 
+## run locally and connect via browser
+- run locally
+```dos
+cd ex12b-angular-passingDataBtwComps-parentAndChild-threeWays
+ng serve
+# or
+ng serve --port 4200
+# or
+npm run start
+# or to run and open it in default browser
+ng serve -o
+```
+- see in browser <br>
+http://localhost:4200
+
+
 ## project created via ng (Angular CLI)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
