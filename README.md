@@ -42,6 +42,27 @@ ng serve -o
 - see in browser <br>
 http://localhost:4200
 
+## few git commands refresher
+- create a new repository on the command line (really no need for this since angular CLI already creates local git repository and .gitignore)
+```dos
+echo "# ex12b-angular-passingDataBtwComps-parentAndChild-threeWays" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/fdu-csci3444/ex12b-angular-passingDataBtwComps-parentAndChild-threeWays.git
+git push -u origin master
+```                
+- to add github remote, then set upstream of local master to be remote master and finally push local master to remote master
+```dos
+git remote add origin https://github.com/fdu-csci3444/ex12b-angular-passingDataBtwComps-parentAndChild-threeWays.git
+git push -u origin master
+# or
+git push --set-upstream origin master
+# and after above line setting upstream of local master to be remote(named origin) master, can just push via below
+git push origin
+# or
+git push
+```
 
 ## project created via ng (Angular CLI)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
