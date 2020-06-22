@@ -55,6 +55,10 @@ git push -u origin master
 - to add github remote, then set upstream of local master to be remote master and finally push local master to remote master
 ```dos
 git remote add origin https://github.com/fdu-csci3444/ex12b-angular-passingDataBtwComps-parentAndChild-threeWays.git
+# set upstream tracking branch of local master to be remote origin master
+git branch --set-upstream-to=origin/master master
+git push origin master
+# or push and set upstream tracking branch
 git push -u origin master
 # or
 git push --set-upstream origin master
